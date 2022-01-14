@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="shortcut icon" type="image/ico" href="../src/images/favicon.ico" />
 </head>
 
@@ -28,10 +29,30 @@
   <include src="./partials/footer.html"></include>
   <include src="./partials/modal-window.html"></include>
 
+  <!-- pop up-------------->
   <script src="../js/pop-up.js" type="module"></script>
+  <!-- body scroll--------->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
+  <!-- Swiper JS ----------->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper --->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    });
+  </script>
+  <!-- mobile menu --->
   <script src="../js/mobile-menu.js" type="module"></script>
   <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
   <script src="./index.js"></script>
