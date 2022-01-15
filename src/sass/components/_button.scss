@@ -22,5 +22,11 @@
   &:hover,
   &:focus {
     background-color: tomato;
+    fill: green;
+    color: darkblue;
   }
+}
+
+.svg-btn {
+  fill: currentColor;
 }
