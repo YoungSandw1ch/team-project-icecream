@@ -1,4 +1,4 @@
-.button {
+.button-buy {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,18 +15,54 @@
 
   background-color: var(--btnLightColor);
 
+  transition: background-color 300ms var(--mainTransition);
+
   @media screen and(min-width:768px) {
     width: 160px;
   }
 
   &:hover,
   &:focus {
-    background-color: tomato;
-    fill: green;
-    color: darkblue;
+    background-color: var(--btnLightHover);
   }
 }
 
-.svg-btn {
-  fill: currentColor;
+.button-red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 24px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 8px;
+  line-height: 1.25;
+
+  border-radius: 20px;
+
+  transition: background-color 300ms var(--mainTransition);
+
+  color: var(--mainTextLightColor);
+  background-color: var(--btnPinkColor);
+
+  &:focus,
+  &:hover {
+    background-color: var(--btnPinkHover);
+  }
+
+  @media screen and(min-width:1280px) {
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+.button-light {
+  color: var(--brandColor);
+  background-color: var(--btnLightColor);
+
+  &:focus,
+  &:hover {
+    background-color: var(--btnLightHover);
+  }
 }
