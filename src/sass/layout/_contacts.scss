@@ -1,23 +1,25 @@
 // @media screen and (min-width: 480px) {
-//   width: 480px;
+//
 // }
 
 // @media screen and (min-width: 768px) {
-//   width: 730px;
+//
 // }
 
 // @media screen and (min-width: 1280px) {
-//   width: 1080px;
+//
 // }
 
 .contacts {
   background-color: var(--backgroundPinkColor);
 }
 .contacts__list {
+  margin-bottom: 55px;
+  // margin-left: -20px;
   width: 100%;
   padding: 0 20px;
+
   @media screen and (min-width: 480px) {
-    width: 480px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -37,11 +39,12 @@
 }
 
 .contacts__item {
+  width: 100%;
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 20px);
-    margin-right: 20px;
+    // margin-right: 20px;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - 30px);
@@ -61,6 +64,17 @@
 
   background-color: var(--mainTextLightColor);
   border-radius: 24px;
+  // @media screen and (min-width: 480px) {
+  //
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //
+  // }
+
+  // @media screen and (min-width: 1280px) {
+  //
+  // }
 }
 // .test__title {
 //   width: 73px;
@@ -101,11 +115,33 @@
   font-weight: 500;
   line-height: 1.83;
   letter-spacing: 0.04em;
+  // @media screen and (min-width: 480px) {
+  //
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //
+  // }
+
+  // @media screen and (min-width: 1280px) {
+  //
+  // }
 }
 
 .contacts__title--other {
   background-color: var(--aditionalColor2);
   width: 130px;
+  // @media screen and (min-width: 480px) {
+  //
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //
+  // }
+
+  // @media screen and (min-width: 1280px) {
+  //
+  // }
 }
 
 .contact__town {
@@ -113,6 +149,17 @@
   font-weight: 500;
   line-height: 1.83;
   letter-spacing: 0.04em;
+  // @media screen and (min-width: 480px) {
+  //
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //
+  // }
+
+  // @media screen and (min-width: 1280px) {
+  //
+  // }
 }
 .contacts__town-text {
   color: var(--secondaryTextDarkColor);
@@ -140,6 +187,9 @@
   margin-bottom: 10px;
 }
 
+.contacts__link {
+  color: var(--secondaryTextDarkColor);
+}
 .contacts__link--tel {
   &::before {
     content: '';
@@ -149,4 +199,39 @@
     background-color: #e1e1e1;
     margin: 25px 0;
   }
+}
+
+.btn__lokations {
+  margin: 0 auto 10px auto;
+  display: block;
+  align-items: center;
+  height: 44px;
+  min-width: 161px;
+  border: transparent;
+  background-color: var(--btnPinkColor);
+  color: var(--mainTextLightColor);
+  &:hover {
+    background-color: var(--btnPinkHover);
+  }
+}
+
+.btn__franchise {
+  margin: 0 auto 55px auto;
+  display: block;
+  align-items: center;
+  height: 44px;
+  min-width: 161px;
+  border: transparent;
+  background-color: var(--btnLightColor);
+  color: var(--brandColor);
+  &:hover {
+    background-color: var(--btnLightHover);
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  // @media screen and (min-width: 1280px) {
+  //
+  // }
 }
