@@ -1,11 +1,21 @@
 .header {
   padding-top: 6px;
-  background-color: #ffb8ca;
+  padding-bottom: 6px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and (min-width: $tablet) {
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
 }
 .header .container {
   display: flex;
   align-items: center;
   @media screen and (max-width: $mobile) {
+    width: 100vw;
+  }
+  @media screen and (max-width: $tablet) {
     justify-content: space-between;
   }
   @media screen and (min-width: $desktop) {
@@ -66,10 +76,9 @@
   height: 33px;
   position: relative;
   background-color: transparent;
-  @media screen and (min-width: $mobile) {
-    margin-left: auto;
-    margin-right: 25px;
-  }
+  margin-left: auto;
+  margin-right: 25px;
+
   @media screen and (min-width: $desktop) {
     display: none;
   }
