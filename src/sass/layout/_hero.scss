@@ -28,12 +28,15 @@
     left: 50%;
     transform: translateX(-40%);
     bottom: 75px;
+    animation-name: scaleCloserMobile;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
     @media screen and(min-width:$tablet) {
       width: 322px;
       height: 322px;
       bottom: 46px;
       left: 290px;
-
+      animation-name: scaleCloser;
       transform: translateX(0);
     }
     @media screen and(min-width:$desktop) {
@@ -51,9 +54,13 @@
   left: 50%;
   bottom: 0;
   transform: translateX(-25%);
+  animation-name: moveUpMobile;
+  animation-duration: 700ms;
+  animation-duration: 500ms;
   @media screen and(min-width:$tablet) {
     height: 336px;
     left: 360px;
+    animation-name: moveUp;
     transform: translateX(0);
   }
   @media screen and(min-width:$desktop) {
@@ -234,4 +241,36 @@
   }
 
   color: var(--mainTextLightColor);
+}
+@keyframes moveUp {
+  0% {
+    transform: scale(0.5) translateY(100%);
+  }
+  100% {
+    transform: scale(1) translateY(0%);
+  }
+}
+@keyframes moveUpMobile {
+  0% {
+    transform: scale(0.5) translateY(100%) translateX(-25%);
+  }
+  100% {
+    transform: scale(1) translateY(0%) translateX(-25%);
+  }
+}
+@keyframes scaleCloser {
+  0% {
+    transform: scale(3) translateX(0%);
+  }
+  100% {
+    transform: scale(1) translateX(0%);
+  }
+}
+@keyframes scaleCloserMobile {
+  0% {
+    transform: scale(3) translateX(0%);
+  }
+  100% {
+    transform: scale(1) translateX(-40%);
+  }
 }
