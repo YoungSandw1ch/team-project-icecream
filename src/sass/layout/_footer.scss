@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: var(--backgroundPinkColor);
 }
 .footer__container {
@@ -46,6 +46,8 @@ footer {
       margin-right: 90px;
       margin-bottom: 91px;
       flex-grow: 1;
+    }
+    @media screen and (max-width: $desktop) {
       width: 340px;
     }
   }
@@ -66,10 +68,10 @@ footer {
   }
 }
 .social__link {
-  fill: #fea5bb;
+  fill: #ffffff;
   width: 100%;
   height: 100%;
-  background-color: transparent;
+  background-color: #fea5bb;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -82,12 +84,17 @@ footer {
     fill: #ffffff;
   }
 }
+.footer__link {
+  color: #d41443;
+}
 .footer__text {
-  padding-bottom: 43px;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
   text-align: right;
+  @media screen and (max-width: $mobile) {
+    padding-bottom: 43px;
+  }
   @media screen and (min-width: $tablet) {
     font-size: 14px;
   }
@@ -101,13 +108,16 @@ footer {
   text-align: center;
 }
 .copyright__text {
-  width: 150px;
+  font-weight: 700;
   padding: 25px 0;
   margin: auto;
   text-align: center;
   color: #907e82;
   @media screen and (min-width: $tablet) {
     padding: 29px 0 18px 0;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 150px;
   }
   @media screen and (min-width: $desktop) {
     padding: 9px 0;
