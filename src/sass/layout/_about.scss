@@ -8,7 +8,7 @@
   @media screen and (min-width: 320px) and (max-width: 767px) {
     margin: 0 auto;
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: contain;
     background-position: right 0 bottom 60px;
     background-image: url(../images/about/about-bg-desktop@1x.png);
 
@@ -19,7 +19,7 @@
 
   @media screen and (min-width: 1280px) {
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: contain;
     background-position: center;
     background-image: url(../images/about/about-bg-desktop@1x.png);
 
