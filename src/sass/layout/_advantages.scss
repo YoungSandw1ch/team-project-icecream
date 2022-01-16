@@ -1,0 +1,103 @@
+.advantages {
+  position: relative;
+  padding-bottom: 97px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 140px;
+  }
+}
+.advantages__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+.advantages__title {
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 1.139;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-top: 16px;
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+    line-height: 1.146;
+    margin-top: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: 1.38;
+    margin-top: 40px;
+  }
+}
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #000000;
+  @media screen and (max-width: 768px) {
+    width: 230px;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+.advantages__item {
+  position: relative;
+  padding: 50px 0px 0px 0px;
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 38px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.advantages__item:nth-child(1)::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 33px;
+  height: 50px;
+
+  background-image: url(.././images/advantages/icon1.png);
+  background-repeat: no-repeat;
+}
+.advantages__item:nth-child(2)::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+
+  background-image: url(.././images/advantages/ic.png);
+  background-repeat: no-repeat;
+}
+.advantages__item:nth-child(3)::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 44px;
+  height: 50px;
+
+  background-image: url(.././images/advantages/ice.png);
+  background-repeat: no-repeat;
+}
