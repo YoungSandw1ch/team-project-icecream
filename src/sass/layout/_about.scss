@@ -2,18 +2,15 @@
   padding-top: 125px;
   padding-bottom: 40px;
   background-color: var(--backgroundPinkColor);
-}
 
-.about__bg {
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  background-position: center;
   @media screen and (min-width: 1200px) {
-    padding: 200px 0;
+    /*  padding-top: 125px;
+    padding-bottom: 40px; */
     margin: 0 auto;
 
-    max-width: 1600px;
-
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: center;
     background-image: url(/images/about/about-bg-desktop@1x.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -38,7 +35,7 @@
     align-items: center;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     align-items: center;
   }
@@ -58,7 +55,7 @@
     height: 340px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 516px;
     height: 516px;
   }
@@ -71,7 +68,7 @@
     margin-left: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 75px;
     height: auto;
   }
@@ -88,7 +85,7 @@
     line-height: 1.76;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.76;
@@ -99,6 +96,7 @@
 .about__text--light {
   font-size: 12px;
   line-height: 1.62;
+  color: var(--secondaryTextDarkColor);
 
   @media screen and (min-width: 480px) {
     font-size: 14px;
@@ -106,7 +104,7 @@
     letter-spacing: 0.04em;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.94;
     letter-spacing: 0.04em;
