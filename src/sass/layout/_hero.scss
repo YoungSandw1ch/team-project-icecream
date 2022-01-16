@@ -94,18 +94,20 @@
   }
 }
 .title-section__title {
-  font-family: Titan One;
+  font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-bottom: 19px;
   @media screen and (min-width: $tablet) {
     font-size: 22px;
   }
   @media screen and (min-width: $desktop) {
     font-size: 38px;
+    margin-bottom: 25px;
   }
 
   color: var(--mainTextLightColor);
@@ -166,6 +168,14 @@
 
   color: var(--mainTextLightColor);
 }
+
+.mini-how-its-made__button-circle {
+  margin-top: 7px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 20px;
+  }
+}
+
 .sale-points {
   display: none;
   @media screen and (min-width: $tablet) {
