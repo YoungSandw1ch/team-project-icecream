@@ -1,6 +1,7 @@
 .advantages {
   position: relative;
   padding-bottom: 97px;
+  background-color: #fff5f6;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 140px;
@@ -19,6 +20,8 @@
   text-transform: uppercase;
   color: #d41443;
   margin-top: 16px;
+  margin-bottom: 16px;
+
   @media screen and (min-width: $tablet) {
     font-size: 48px;
     line-height: 1.146;
@@ -51,7 +54,9 @@
   position: relative;
   padding: 50px 0px 0px 0px;
   @media screen and (max-width: $tablet) {
-    margin-bottom: 38px;
+    &:not(:last-child) {
+      margin-right: 38px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
