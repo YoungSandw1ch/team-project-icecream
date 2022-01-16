@@ -38,20 +38,7 @@
   <!-- Swiper JS ----------->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper --->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      slidesPerView: 1,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + "</span>";
-        },
-      },
-    });
-  </script>
+  <script src="../js/swiper.js" type="module"></script>
   <!-- mobile menu --->
   <script src="../js/mobile-menu.js" type="module"></script>
   <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
