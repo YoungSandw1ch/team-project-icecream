@@ -1,0 +1,132 @@
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 150;
+  background: var(--secondaryTextLightColor);
+  opacity: 0; // Скрываем фон и сам попап
+  pointer-events: none; // Запрещаем ему быть целью событий
+  transition: 0.5s all;
+}
+
+.popup__bg.active {
+  // При добавлении класса 'active'
+  opacity: 1; // Показываем фон и попап
+  pointer-events: all; // Возвращаем события
+  transition: 0.5s all;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+  background: #ffffff;
+  padding: 50px 25px;
+  border-radius: 10px;
+  // border: 1px solid var(--brandColor);
+  transition: 0.5s all;
+  width: 90%;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 560px;
+  }
+}
+
+.popup.active {
+  // При добавлении класса 'active'
+  transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+  transition: 0.5s all;
+}
+
+.popup__button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--brandColor);
+  background-color: transparent;
+  border-radius: 50%;
+  color: var(--brandColor);
+
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    background-color: var(--brandColor);
+  }
+}
+
+.popup__icon {
+  fill: currentColor;
+}
+
+//==========форма====================================
+.form {
+}
+
+.form__box {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 44px;
+  padding-bottom: 8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: #ffffff;
+  outline: transparent;
+  transition: border-color 250ms linear;
+
+  &::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+    transition: color 250ms linear;
+  }
+
+  &:focus {
+    border-color: #ffffff;
+  }
+
+  &:focus::placeholder {
+    color: #ffffff;
+  }
+}
+
+.form__input:nth-child(1) {
+  @media screen and (min-width: $tablet) {
+    margin-right: 30px;
+  }
+}
+
+.form__input--textarea {
+  resize: none;
+  height: 75px;
+}
+
+.form__button {
+  display: block;
+  outline: transparent;
+
+  @media screen and (max-width: 767.5px) {
+    margin: 0 auto;
+  }
+}
