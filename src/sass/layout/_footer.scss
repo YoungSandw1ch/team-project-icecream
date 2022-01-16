@@ -39,7 +39,6 @@
   &:first-child {
     @media screen and (max-width: 768px) {
       margin-bottom: 42px;
-      width: 234px;
     }
 
     @media screen and (min-width: $tablet) {
@@ -48,7 +47,7 @@
       flex-grow: 1;
     }
     @media screen and (max-width: $desktop) {
-      width: 340px;
+      width: 270px;
     }
   }
 }
