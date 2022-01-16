@@ -54,3 +54,60 @@
     background-color: var(--btnPinkHover);
   }
 }
+
+// .button {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   height: 44px;
+//   padding-left: 37px;
+//   padding-right: 37px;
+
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.31;
+//   color: var(--brandColor);
+
+//   border-radius: 22px;
+
+//   background-color: var(--btnLightColor);
+
+//   transition: background-color 300ms var(--mainTransition);
+
+//   &:hover,
+//   &:focus {
+//     background-color: var(--btnLightHover);
+//   }
+// }
+
+// .button__hero {
+//   padding-left: 14px;
+//   padding-right: 14px;
+
+//   height: 24px;
+
+//   font-size: 8px;
+//   line-height: 1.25;
+//   @media screen and(min-width:1280px) {
+//     padding-left: 20px;
+//     padding-right: 20px;
+
+//     height: 40px;
+
+//     font-size: 14px;
+//     line-height: 1.28;
+//   }
+// }
+
+// // button__red  Работает только в связке с класом .button__hero
+// // (тоесть на красную кнопку в герое нужно поставить сразу 3 класа)
+// .button__red {
+//   color: var(--mainTextLightColor);
+//   background-color: var(--btnPinkColor);
+
+//   &:focus,
+//   &:hover {
+//     background-color: var(--btnPinkHover);
+//   }
+// }
