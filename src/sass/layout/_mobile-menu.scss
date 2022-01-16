@@ -1,6 +1,57 @@
-.mobile-menu > .button {
+.js-menu-container {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mobile-menu {
   position: absolute;
-  top: 600px;
-  left: 150px;
-  fill: tomato;
+  top: 0;
+  right: 0;
+
+  z-index: 2;
+
+  width: 250px;
+  height: 100vh;
+
+  background-color: #e17992;
+}
+
+.svg-btn {
+  width: 14px;
+  height: 14px;
+}
+
+.js-close-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  padding: 0;
+  top: 23px;
+  right: 28px;
+
+  background-color: transparent;
+
+  z-index: 3;
+}
+
+.btn-mob-svg {
+  margin-left: 25px;
+}
+
+.mobile-list {
+  margin-top: 20px;
+}
+
+.mobile-list__item {
+  display: block;
+  border: solid 1px #e18298;
+}
+
+.mobile-list__link {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 21;
 }
