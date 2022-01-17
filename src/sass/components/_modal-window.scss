@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 150;
   background: var(--secondaryTextLightColor);
   opacity: 0; // Скрываем фон и сам попап
@@ -24,11 +24,11 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
   background: #ffffff;
-  padding: 50px 25px;
-  border-radius: 10px;
+  padding: 38px 25px;
+  border-radius: 30px;
   // border: 1px solid var(--brandColor);
   transition: 0.5s all;
-  width: 90%;
+  width: 94%;
 
   @media screen and (min-width: $mobile) {
     width: 450px;
@@ -45,33 +45,123 @@
   transition: 0.5s all;
 }
 
-.popup__button {
+//==============================ДЕКОР====================================
+
+// @media (max-width: 480px) {
+//   .decor__left,
+//   .decor__right,
+//   .decor__circle {
+//     display: none;
+//   }
+// }
+
+// .decor__left {
+//   bottom: 60px;
+//   left: -30px;
+
+//   &::before {
+//     top: -20px;
+//   }
+
+//   &::after {
+//     top: 20px;
+//     left: 10px;
+//   }
+// }
+
+// .decor__right {
+//   top: 60px;
+//   right: -30px;
+
+//   &::before {
+//     top: -20px;
+//     right: 0;
+//   }
+
+//   &::after {
+//     top: 20px;
+//     right: 10px;
+//   }
+// }
+
+// .decor__left,
+// .decor__right {
+//   content: '';
+//   position: absolute;
+//   width: 50px;
+//   height: 20px;
+//   background: var(--secondaryTextLightColor);
+//   border-radius: 20px;
+// }
+
+// .decor__left:before,
+// .decor__left:after,
+// .decor__right:before,
+// .decor__right:after {
+//   content: '';
+//   position: absolute;
+//   width: 50px;
+//   height: 20px;
+//   border-radius: 30px;
+//   background: white;
+// }
+
+// .decor__circle {
+//   position: absolute;
+//   bottom: 80px;
+//   left: -55px;
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 50%;
+//   background: white;
+// }
+
+//==============================ФОРМА====================================
+
+.form__button-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
   height: 30px;
   border: 1px solid var(--brandColor);
-  background-color: transparent;
+  background-color: var(--brandColor);
   border-radius: 50%;
-  color: var(--brandColor);
+  color: #ffffff;
 
   &:focus,
   &:hover {
-    color: #ffffff;
-    background-color: var(--brandColor);
+    color: var(--brandColor);
+    background-color: #ffffff;
   }
 }
 
-.popup__icon {
+.form__icon {
   fill: currentColor;
 }
 
-//==========форма====================================
-.form {
+.form__text {
+  margin-bottom: 15px;
+  font-family: 'Titan One', cursive;
+  font-size: 24px;
+  line-height: 1.42;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondaryTextLightColor);
+}
+
+.form__text-span {
+  font-family: 'Titan One', cursive;
+  font-size: 28px;
+  line-height: 1.42;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brandColor);
 }
 
 .form__box {
@@ -80,15 +170,97 @@
   }
 }
 
+.form__thumb {
+  &:first-of-type {
+    @media screen and (min-width: $tablet) {
+      margin-right: 25px;
+    }
+  }
+}
+
+.form__title {
+  display: inline-block;
+  font-size: 21px;
+  line-height: 1.22;
+  color: var(--mainTextLightColor);
+  background-color: #c2e297;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.order {
+  margin-bottom: 10px;
+}
+
+.order__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.form__checkbox-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-right: 20px;
+  font-weight: 600;
+  color: var(--secondaryTextLightColor);
+
+  @media screen and (min-width: 400px) and (max-width: 767.5px) {
+    margin-right: 70px;
+  }
+}
+
+.form__checkbox {
+  margin-left: 10px;
+  border-color: var(--brandColor);
+  // @media screen and (min-width: 400px) and (max-width: 767.5px) {
+  //   display: flex;
+  //   align-items: center;
+  // }
+
+  // &:before {
+  //   content: '';
+  //   @media screen and (min-width: 400px) and (max-width: 767.5px) {
+  //     width: 100%;
+  //     height: 1px;
+  //     display: block;
+  //     background-color: var(--brandColor);
+  //   }
+  // }
+}
+
+.form__input-name {
+  font-weight: 600;
+  color: var(--brandColor);
+}
+
+.form__input-number {
+  width: 50px;
+  height: 25px;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--brandColor);
+  color: var(--secondaryTextLightColor);
+}
+
 .form__input {
   display: block;
   width: 100%;
-  margin-bottom: 44px;
-  padding-bottom: 8px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 15px;
   background-color: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  color: #ffffff;
+  border: 1px solid var(--brandColor);
+  border-radius: 10px;
+  color: var(--brandColor);
   outline: transparent;
   transition: border-color 250ms linear;
 
@@ -98,16 +270,16 @@
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.4);
+    color: var(--secondaryTextLightColor);
     transition: color 250ms linear;
   }
 
   &:focus {
-    border-color: #ffffff;
+    border-color: #c2e297;
   }
 
   &:focus::placeholder {
-    color: #ffffff;
+    color: var(--brandColor);
   }
 }
 
@@ -117,16 +289,15 @@
   }
 }
 
-.form__input--textarea {
-  resize: none;
-  height: 75px;
-}
-
 .form__button {
+  color: #ffffff;
+  background-color: var(--brandColor);
   display: block;
   outline: transparent;
+  margin: 0 auto;
 
-  @media screen and (max-width: 767.5px) {
-    margin: 0 auto;
+  &:hover,
+  &:focus {
+    color: var(--brandColor);
   }
 }
