@@ -1,5 +1,4 @@
 .contacts {
-  // background-color: var(--backgroundPinkColor);
   background: -webkit-linear-gradient(180deg, rgb(255, 255, 255) 10%, rgb(255, 245, 246) 10%);
   background: -moz-linear-gradient(180deg, rgb(255, 255, 255) 10%, rgb(255, 245, 246) 10%);
   background: linear-gradient(180deg, rgb(255, 255, 255) 10%, rgb(255, 245, 246) 10%);
@@ -194,6 +193,7 @@
     color: var(--secondaryTextLightColor);
   }
 }
+
 .contacts__link--tel {
   &::before {
     content: '';
@@ -210,26 +210,44 @@
     }
   }
 }
-.contacts__btn--list {
+
+.btn-list {
   text-align: center;
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
+
     &:not(:last-child) {
       margin-right: 15px;
     }
-    .contacts__btn--item:not(:last-child) {
+
+    .btn-list__item:not(:last-child) {
       margin-right: 15px;
     }
   }
 
   @media screen and (min-width: $desktop) {
-    .contacts__btn--item:not(:last-child) {
+    .btn-list__item:not(:last-child) {
       margin-right: 15px;
     }
   }
 }
 
+.btn-list__link {
+  &:first-of-type {
+    @media screen and (max-width: 767.5px) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (max-width: 767.5px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.link__icon {
+  margin-left: 10px;
+}
 // .btn__loсations {
 //   margin: 0 auto 10px auto;
 //   display: block;
