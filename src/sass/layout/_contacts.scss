@@ -5,17 +5,6 @@
   background: linear-gradient(180deg, rgb(255, 255, 255) 10%, rgb(255, 245, 246) 10%);
   padding-bottom: 113px;
   @media screen and (min-width: $desktop) {
-    //   background-image: url(../images/contacts/bg-contacts.png),
-    //     linear-gradient(180deg, rgb(255, 255, 255) 6%, rgb(255, 245, 246) 6%),
-    //     -webkit-linear-gradient(180deg, rgb(255, 255, 255) 6%, rgb(255, 245, 246) 6%),
-    //     -moz-linear-gradient(180deg, rgb(255, 255, 255) 6%, rgb(255, 245, 246) 6%);
-    //   background-position: top;
-    //   background-repeat: no-repeat;
-    //
-    // @media screen and (min-width: 1280px) {
-    //   background-image: linear-gradient(180deg, rgb(255, 255, 255) 6%, rgba(255, 245, 246, 0.24) 6%),
-    //     url(../images/contacts/bg-contacts.png);
-
     background: url(../images/contacts/bg-contacts.png),
       linear-gradient(180deg, rgb(255, 255, 255) 11%, #fff5f6 6%);
     background-repeat: no-repeat;
@@ -118,10 +107,6 @@
     height: 28px;
     margin-bottom: 30px;
   }
-
-  // @media screen and (min-width: 1280px) {
-  //
-  // }
 }
 
 .contacts__title--other {
@@ -245,49 +230,50 @@
   }
 }
 
-.btn__loсations {
-  margin: 0 auto 10px auto;
-  display: block;
-  align-items: center;
-  height: 44px;
-  min-width: 161px;
-  border: transparent;
-  background-color: var(--btnPinkColor);
-  color: var(--mainTextLightColor);
-  &:hover {
-    background-color: var(--btnPinkHover);
-    fill: var(--mainTextLightColor);
-  }
-  @media screen and (min-width: $tablet) {
-    min-width: 190px;
-    margin-bottom: -10px;
-  }
+// .btn__loсations {
+//   margin: 0 auto 10px auto;
+//   display: block;
+//   align-items: center;
+//   height: 44px;
+//   min-width: 161px;
+//   border: transparent;
+//   background-color: var(--btnPinkColor);
+//   color: var(--mainTextLightColor);
+//   &:hover {
+//     background-color: var(--btnPinkHover);
+//     color: var(--mainTextLightColor);
+//     fill: currentColor;
+//   }
+//   @media screen and (min-width: $tablet) {
+//     min-width: 190px;
+//     margin-bottom: -10px;
+//   }
 
-  @media screen and (min-width: $desktop) {
-    min-width: 198px;
-  }
-}
+//   @media screen and (min-width: $desktop) {
+//     min-width: 198px;
+//   }
+// }
 
-.btn__franchise {
-  margin: 0 auto;
-  display: block;
-  align-items: center;
-  height: 44px;
-  min-width: 161px;
-  border: transparent;
-  background-color: var(--btnLightColor);
-  color: var(--brandColor);
-  &:hover {
-    background-color: var(--btnLightHover);
-    fill: currentColor;
-  }
+// .btn__franchise {
+//   margin: 0 auto;
+//   display: block;
+//   align-items: center;
+//   height: 44px;
+//   min-width: 161px;
+//   border: transparent;
+//   background-color: var(--btnLightColor);
+//   color: var(--brandColor);
+//   &:hover {
+//     background-color: var(--btnLightHover);
+//     fill: currentColor;
+//   }
 
-  @media screen and (min-width: $tablet) {
-    min-width: 175px;
-    display: inline;
-  }
+//   @media screen and (min-width: $tablet) {
+//     min-width: 175px;
+//     display: inline;
+//   }
 
-  @media screen and (min-width: $desktop) {
-    min-width: 180px;
-  }
-}
+//   @media screen and (min-width: $desktop) {
+//     min-width: 180px;
+//   }
+// }
