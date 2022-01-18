@@ -47,7 +47,7 @@
 
   &:hover,
   &:focus {
-    background-color: #d41342;
+    background-color: var(--btnPinkHover);
   }
 
   @media screen and (min-width: 768px) {
