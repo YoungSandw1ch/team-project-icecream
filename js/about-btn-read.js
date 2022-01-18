@@ -4,10 +4,12 @@ onload = function () {
   for (let j = 0; j < btns.length; j++)
     btns[j].onclick = function () {
       let cont = this.parentNode.querySelector('.cont');
-      if (this.value == 'Read more') (cont.style.display = 'inline'), (this.value = 'Read less');
-      else (cont.style.display = 'none'), (this.value = 'Read more');
-    };
-};
+      let dot = this.parentNode.querySelector('.dot');
+      if (this.value == 'Read more') cont.style.display = 'inline', dot.style.display = 'none', this.value = 'Read less';
+      else cont.style.display = 'none', dot.style.display = 'inline', this.value = 'Read more';
+    }
+}
+
 
 // Скрипт показывает подсказку на Read more
 let tooltipElem;
