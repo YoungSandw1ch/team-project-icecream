@@ -32,7 +32,11 @@
   width: 94%;
 
   @media screen and (min-width: $mobile) {
-    width: 420px;
+    width: 395px;
+  }
+
+  @media screen and (min-width: 600px) {
+    width: 440px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -53,74 +57,74 @@
 
 //==============================ДЕКОР====================================
 
-// @media (max-width: 480px) {
-//   .decor__left,
-//   .decor__right,
-//   .decor__circle {
-//     display: none;
-//   }
-// }
+@media (max-width: 479.5px) {
+  .decor__left,
+  .decor__right,
+  .decor__circle {
+    display: none;
+  }
+}
 
-// .decor__left {
-//   bottom: 60px;
-//   left: -30px;
+.decor__left {
+  bottom: 60px;
+  left: -30px;
 
-//   &::before {
-//     top: -20px;
-//   }
+  &::before {
+    top: -20px;
+  }
 
-//   &::after {
-//     top: 20px;
-//     left: 10px;
-//   }
-// }
+  &::after {
+    top: 20px;
+    left: 10px;
+  }
+}
 
-// .decor__right {
-//   top: 60px;
-//   right: -30px;
+.decor__right {
+  top: 95px;
+  right: -40px;
 
-//   &::before {
-//     top: -20px;
-//     right: 0;
-//   }
+  &::before {
+    top: -20px;
+    right: 0;
+  }
 
-//   &::after {
-//     top: 20px;
-//     right: 10px;
-//   }
-// }
+  &::after {
+    top: 20px;
+    right: 10px;
+  }
+}
 
-// .decor__left,
-// .decor__right {
-//   content: '';
-//   position: absolute;
-//   width: 50px;
-//   height: 20px;
-//   background: var(--secondaryTextLightColor);
-//   border-radius: 20px;
-// }
+.decor__left,
+.decor__right {
+  content: '';
+  position: absolute;
+  width: 71px;
+  height: 20px;
+  background: var(--secondaryTextLightColor);
+  border-radius: 20px;
+}
 
-// .decor__left:before,
-// .decor__left:after,
-// .decor__right:before,
-// .decor__right:after {
-//   content: '';
-//   position: absolute;
-//   width: 50px;
-//   height: 20px;
-//   border-radius: 30px;
-//   background: white;
-// }
+.decor__left:before,
+.decor__left:after,
+.decor__right:before,
+.decor__right:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  background: white;
+}
 
-// .decor__circle {
-//   position: absolute;
-//   bottom: 80px;
-//   left: -55px;
-//   width: 20px;
-//   height: 20px;
-//   border-radius: 50%;
-//   background: white;
-// }
+.decor__circle {
+  position: absolute;
+  bottom: 80px;
+  left: -70px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
 
 //==============================ФОРМА====================================
 
