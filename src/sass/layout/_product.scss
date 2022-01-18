@@ -54,6 +54,18 @@
 }
 
 .products__item {
+  width: 280px;
+  height: 598px;
+  background-color: #ffb8ca;
+  border-radius: 24px;
+  margin: 0 auto;
+  padding: 140px 40px 40px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
 
   &:not(:last-child) {
@@ -72,48 +84,87 @@
     flex-basis: calc((100% - 86px) / 3);
   }
 }
-
-.images {
+.products__item::before {
+  content: url('../images/products/ice-cream-mob.png');
   position: absolute;
-  top: -113px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 20px;
+  top: -110px;
   width: 249px;
   height: 252px;
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url('../images/products/ice-cream-mob2x.png');
 
-  @media screen and (min-width: 768px) {
-    top: -100px;
-    width: 220px;
-    height: 226px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    top: -210px;
-    width: 335px;
-    height: 335px;
-  }
+  // }
+  // background-image: url('../images/products/ice-cream-mob.png');
 }
-
-.products__box {
-  display: block;
-  margin: 0 auto;
-  padding-top: 165px;
-  border-radius: 24px;
-  padding-bottom: 41px;
-  background-color: #ffb8ca;
-
-  @media screen and (max-width: 767.5px) {
-    max-width: 280px;
-  }
-}
-
-.products__box--background {
+// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//   .products__item {
+//     background-image: url('../images/products/ice-cream-mob2x.png');
+//   }
+// }
+.products__item--color {
   background-color: #f0d1a5;
 }
-
-.products__box--background-color {
+.products__item--color::before {
+  content: url('../images/products/ice-coffee-mob.png');
+  position: absolute;
+  left: 20px;
+  top: -110px;
+  width: 249px;
+  height: 252px;
+}
+.products__item--imag {
   background-color: #c2e297;
 }
+.products__item--imag::before {
+  content: url('../images/products/milkshakes-mob.png');
+  position: absolute;
+  left: 20px;
+  top: -120px;
+  width: 249px;
+  height: 252px;
+}
+// .images {
+//   position: absolute;
+//   top: -113px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: 249px;
+//   height: 252px;
+
+//   @media screen and (min-width: 768px) {
+//     top: -100px;
+//     width: 220px;
+//     height: 226px;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     top: -210px;
+//     width: 335px;
+//     height: 335px;
+//   }
+// }
+
+// .products__box {
+//   display: block;
+//   margin: 0 auto;
+//   padding-top: 165px;
+//   border-radius: 24px;
+//   padding-bottom: 41px;
+//   background-color: #ffb8ca;
+
+//   @media screen and (max-width: 767.5px) {
+//     max-width: 280px;
+//   }
+// }
+
+// .products__box--background {
+//   background-color: #f0d1a5;
+// }
+
+// .products__box--background-color {
+//   background-color: #c2e297;
+// }
 
 .products__name {
   font-family: 'Titan One', cursive;
@@ -125,6 +176,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
+  margin-top: 22px;
 
   @media screen and (min-width: $tablet) {
     margin-top: 30px;
