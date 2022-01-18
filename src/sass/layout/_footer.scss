@@ -86,13 +86,14 @@
 .footer__link {
   color: #d41443;
 }
-.footer__text {
+.footer__span {
+  display: block;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
   text-align: right;
-  @media screen and (max-width: $mobile) {
-    padding-bottom: 43px;
+  @media screen and (max-width: $tablet) {
+    padding-bottom: 40px;
   }
   @media screen and (min-width: $tablet) {
     font-size: 14px;
