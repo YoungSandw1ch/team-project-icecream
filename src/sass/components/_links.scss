@@ -27,24 +27,6 @@
   }
 }
 
-.link--brand-color {
-  color: #ffffff;
-  background-color: var(--brandColor);
-
-  &:hover,
-  &:focus {
-    background-color: #d41342;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 191px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 198px;
-  }
-}
-
 .link--how-made {
   width: 83px;
   height: 24px;

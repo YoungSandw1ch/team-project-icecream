@@ -29,6 +29,36 @@
   width: 176px;
 }
 
+.button--franchise {
+  width: 161px;
+
+  @media screen and (min-width: 768px) {
+    width: 174px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 180px;
+  }
+}
+
+.button--location {
+  color: #ffffff;
+  background-color: var(--brandColor);
+
+  &:hover,
+  &:focus {
+    background-color: #d41342;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 191px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 198px;
+  }
+}
+
 .button-circle {
   display: flex;
   justify-content: center;
