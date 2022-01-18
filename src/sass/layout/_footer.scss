@@ -83,17 +83,20 @@
     fill: #ffffff;
   }
 }
-.footer__link {
+.footer__contact {
+  margin-bottom: 43px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.contact__link {
   color: #d41443;
 }
-.footer__text {
+.contact__text {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
-  text-align: right;
-  @media screen and (max-width: $mobile) {
-    padding-bottom: 43px;
-  }
+  margin-right: 5px;
   @media screen and (min-width: $tablet) {
     font-size: 14px;
   }
