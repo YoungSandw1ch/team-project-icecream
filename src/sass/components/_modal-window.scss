@@ -16,11 +16,12 @@
   opacity: 1; // Показываем фон и попап
   pointer-events: all; // Возвращаем события
   transition: 0.5s all;
+  overflow-y: scroll;
 }
 
 .popup {
   position: absolute;
-  top: 50%;
+  top: 2%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
   background: #ffffff;
@@ -31,90 +32,99 @@
   width: 94%;
 
   @media screen and (min-width: $mobile) {
-    width: 450px;
+    width: 395px;
+  }
+
+  @media screen and (min-width: 600px) {
+    width: 440px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 560px;
+    top: 50%;
+    width: 585px;
   }
 }
 
 .popup.active {
   // При добавлении класса 'active'
-  transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+  transform: translate(-50%) scale(1); // Так же центрируем и плавно увеличиваем
   transition: 0.5s all;
+
+  @media screen and (min-width: $tablet) {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 //==============================ДЕКОР====================================
 
-// @media (max-width: 480px) {
-//   .decor__left,
-//   .decor__right,
-//   .decor__circle {
-//     display: none;
-//   }
-// }
+@media (max-width: 479.5px) {
+  .decor__left,
+  .decor__right,
+  .decor__circle {
+    display: none;
+  }
+}
 
-// .decor__left {
-//   bottom: 60px;
-//   left: -30px;
+.decor__left {
+  bottom: 60px;
+  left: -40px;
 
-//   &::before {
-//     top: -20px;
-//   }
+  &::before {
+    top: -20px;
+  }
 
-//   &::after {
-//     top: 20px;
-//     left: 10px;
-//   }
-// }
+  &::after {
+    top: 20px;
+    left: 10px;
+  }
+}
 
-// .decor__right {
-//   top: 60px;
-//   right: -30px;
+.decor__right {
+  top: 95px;
+  right: -40px;
 
-//   &::before {
-//     top: -20px;
-//     right: 0;
-//   }
+  &::before {
+    top: -20px;
+    right: 0;
+  }
 
-//   &::after {
-//     top: 20px;
-//     right: 10px;
-//   }
-// }
+  &::after {
+    top: 20px;
+    right: 10px;
+  }
+}
 
-// .decor__left,
-// .decor__right {
-//   content: '';
-//   position: absolute;
-//   width: 50px;
-//   height: 20px;
-//   background: var(--secondaryTextLightColor);
-//   border-radius: 20px;
-// }
+.decor__left,
+.decor__right {
+  content: '';
+  position: absolute;
+  width: 71px;
+  height: 20px;
+  background: var(--secondaryTextLightColor);
+  border-radius: 20px;
+}
 
-// .decor__left:before,
-// .decor__left:after,
-// .decor__right:before,
-// .decor__right:after {
-//   content: '';
-//   position: absolute;
-//   width: 50px;
-//   height: 20px;
-//   border-radius: 30px;
-//   background: white;
-// }
+.decor__left:before,
+.decor__left:after,
+.decor__right:before,
+.decor__right:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  background: white;
+}
 
-// .decor__circle {
-//   position: absolute;
-//   bottom: 80px;
-//   left: -55px;
-//   width: 20px;
-//   height: 20px;
-//   border-radius: 50%;
-//   background: white;
-// }
+.decor__circle {
+  position: absolute;
+  bottom: 80px;
+  left: -80px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
 
 //==============================ФОРМА====================================
 
@@ -144,7 +154,7 @@
 }
 
 .form__text {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-family: 'Titan One', cursive;
   font-size: 24px;
   line-height: 1.42;
@@ -167,6 +177,7 @@
 .form__box {
   @media screen and (min-width: $tablet) {
     display: flex;
+    margin-bottom: 25px;
   }
 }
 
@@ -176,6 +187,12 @@
       margin-right: 25px;
     }
   }
+
+  &:last-of-type {
+    @media screen and (max-width: 767.5px) {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .form__title {
@@ -183,7 +200,7 @@
   font-size: 21px;
   line-height: 1.22;
   color: var(--mainTextLightColor);
-  background-color: #c2e297;
+  background-color: #9fcb65;
   border-radius: 6px;
   text-align: center;
   margin-bottom: 10px;
@@ -204,6 +221,7 @@
 }
 
 .form__checkbox-name {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -220,21 +238,36 @@
 .form__checkbox {
   margin-left: 10px;
   border-color: var(--brandColor);
-  // @media screen and (min-width: 400px) and (max-width: 767.5px) {
-  //   display: flex;
-  //   align-items: center;
-  // }
-
-  // &:before {
-  //   content: '';
-  //   @media screen and (min-width: 400px) and (max-width: 767.5px) {
-  //     width: 100%;
-  //     height: 1px;
-  //     display: block;
-  //     background-color: var(--brandColor);
-  //   }
-  // }
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--secondaryTextLightColor);
+  border-radius: 3px;
 }
+
+.form__checkbox {
+  margin-left: 10px;
+  border-color: var(--brandColor);
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--secondaryTextLightColor);
+  border-radius: 3px;
+}
+
+.checkbox__icon {
+  position: absolute;
+  right: -8px;
+  bottom: 2px;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  transition: opacity 300ms linear;
+  fill: #9fcb65;
+}
+//=========================================================
+.checkbox:checked + .checkbox__icon {
+  opacity: 1;
+}
+//=========================================================
 
 .form__input-name {
   font-weight: 600;
@@ -248,21 +281,24 @@
   padding-left: 10px;
   border-radius: 5px;
   border: 1px solid var(--brandColor);
-  color: var(--secondaryTextLightColor);
+  color: #71993e;
 }
 
 .form__input {
   display: block;
   width: 100%;
   height: 30px;
-  margin-bottom: 20px;
   padding-left: 15px;
   background-color: transparent;
-  border: 1px solid var(--brandColor);
+  border: 2px solid #71993e;
   border-radius: 10px;
   color: var(--brandColor);
   outline: transparent;
   transition: border-color 250ms linear;
+
+  @media screen and (max-width: 767.5px) {
+    margin-bottom: 20px;
+  }
 
   &::placeholder {
     font-weight: 600;
@@ -275,7 +311,7 @@
   }
 
   &:focus {
-    border-color: #c2e297;
+    border-color: var(--brandColor);
   }
 
   &:focus::placeholder {
