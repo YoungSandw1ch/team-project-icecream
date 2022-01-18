@@ -16,11 +16,12 @@
   opacity: 1; // Показываем фон и попап
   pointer-events: all; // Возвращаем события
   transition: 0.5s all;
+  overflow-y: scroll;
 }
 
 .popup {
   position: absolute;
-  top: 50%;
+  top: 2%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
   background: #ffffff;
@@ -35,14 +36,19 @@
   }
 
   @media screen and (min-width: $tablet) {
+    top: 50%;
     width: 560px;
   }
 }
 
 .popup.active {
   // При добавлении класса 'active'
-  transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+  transform: translate(-50%) scale(1); // Так же центрируем и плавно увеличиваем
   transition: 0.5s all;
+
+  @media screen and (min-width: $tablet) {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 //==============================ДЕКОР====================================
