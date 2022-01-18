@@ -12,7 +12,7 @@
   transition: background-color 300ms var(--mainTransition);
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: var(--btnLightHover);
   }
 }
@@ -40,7 +40,7 @@
   border-radius: 50%;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: var(--brandColor);
     color: #ffffff;
   }
