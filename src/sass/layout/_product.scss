@@ -31,6 +31,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: -10px;
+    align-items: flex-start;
   }
 
   @media screen and (min-width: 1280px) {
@@ -40,7 +41,6 @@
 
 .products__item {
   width: 280px;
-  height: 485px;
   background-color: #ffb8ca;
   border-radius: 24px;
   margin: 0 auto;
@@ -48,9 +48,6 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
 
   &:not(:last-child) {
@@ -64,14 +61,12 @@
     flex-basis: calc((100% - 60px) / 3);
     padding: 115px 11px 40px 11px;
     width: 220px;
-    height: 485px;
   }
 
   @media screen and (min-width: $desktop) {
     margin: 14px;
     flex-basis: calc((100% - 86px) / 3);
     width: 329px;
-    height: 525px;
     padding: 140px 44px 50px 44px;
   }
 }
