@@ -39,7 +39,7 @@
   line-height: 1.7;
   color: #000000;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.5px) {
     width: 230px;
   }
   @media screen and (min-width: $tablet) {
@@ -53,7 +53,7 @@
 }
 .advantages__item {
   position: relative;
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767.5px) {
     &:not(:last-child) {
       margin-bottom: 38px;
     }
